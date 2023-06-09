@@ -31,6 +31,40 @@
 
 
 -->
+
+    <script>
+        function before() {
+            document.getElementById('myImage')
+                .src = "images/3BHK-image.jpg";
+            document.getElementById('message')
+                .innerHTML = "Hii! GeeksforGeeks people";
+        }
+
+        function afterr() {
+            document.getElementById('myImage')
+                .src = "images/4BHK-image.jpeg";
+            document.getElementById('message')
+                .innerHTML = "Bye! GeeksforGeeks people";
+        }
+    </script>
+
+    <style>
+        img {
+            height: 500px;
+            width: 450px;
+        }
+        
+        h1 {
+            color: darkgreen;
+            margin-top: 20px;
+            font-family: Comic Sans MS, cursive, sans-serif;
+        }
+        
+        .button {
+            margin-left: 40%;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -50,7 +84,7 @@
 
             <div class="videoWrapper">
                 <video autoplay="" loop="" muted="" class="custom-video" poster="videos/792bd98f3e617786c850493560e11c45.jpg">
-                        <source src="videos/pexels-tom-fisk-3648257-3840x2160-30fps.mp4" type="video/mp4">
+                        <source src="video/pexels-pixabay-856661-1920x1080-50fps.mp4" type="video/mp4">
                     </video>
             </div>
 
@@ -254,59 +288,79 @@
                     </div>
                 </div>
                 </div>
-        
 
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/images/slider/slider.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                       
-                        <!-- <p>Some representative placeholder content for the first slide.</p> -->
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="/images/slider/slider1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                       
-                        <!--  <p>Some representative placeholder content for the second slide.</p> -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/images/slider/slider.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+
+                                <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/slider/slider1.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+
+                                <!--  <p>Some representative placeholder content for the second slide.</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/housing/images/slider/" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+
+                                <!--  <p>Some representative placeholder content for the third slide.</p> -->
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="/images/slider/slider3.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        
-                        <!--  <p>Some representative placeholder content for the third slide.</p> -->
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden"></span>
             </button>
-        </div>
-        </class>
-    </section>
+                </div>
+            </class>
+        </section>
 
         <!-- image slider end -->
 
 
 
+        <!-- change image start -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <img id="myImage" src="/images/2BHK-image.jpg">
+                </div>
+
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        <div class="button">
+            <button class="btn btn-warning" onclick=before();>
+                Before
+            </button>
+            <button class="btn btn-success" onclick=afterr();>
+                Afterr
+            </button>
+        </div>
+
+        <!-- change image end -->
 
 
 
 
-
-       
 
         <section class=" contact section-padding" id="contact">
             <div class="container>
@@ -384,124 +438,193 @@
 
     </main>
 
-    <footer class="site-footer ">
-        <div class="site-footer-top ">
-            <div class="container ">
-                <div class="row ">
-
-                    <div class="col-lg-6 col-12 ">
-                        <h2 class="text-white mb-lg-0 ">Festava Live</h2>
-                    </div>
-
-                    <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center ">
-                        <ul class="social-icon d-flex justify-content-lg-end ">
-                            <li class="social-icon-item ">
-                                <a href="# " class="social-icon-link ">
-                                    <span class="bi-twitter "></span>
-                                </a>
-                            </li>
-
-                            <li class="social-icon-item ">
-                                <a href="# " class="social-icon-link ">
-                                    <span class="bi-apple "></span>
-                                </a>
-                            </li>
-
-                            <li class="social-icon-item ">
-                                <a href="# " class="social-icon-link ">
-                                    <span class="bi-instagram "></span>
-                                </a>
-                            </li>
-
-                            <li class="social-icon-item ">
-                                <a href="# " class="social-icon-link ">
-                                    <span class="bi-youtube "></span>
-                                </a>
-                            </li>
-
-                            <li class="social-icon-item ">
-                                <a href="# " class="social-icon-link ">
-                                    <span class="bi-pinterest "></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- Footer -->
+<footer class="bg-dark text-center text-white ">
+    <!-- Grid container -->
+    <div class="container p-4 ">
+      <!-- Section: Social media -->
+      <section class="mb-4 ">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "
+          ><i class="fab fa-facebook-f "></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "
+          ><i class="fab fa-twitter "></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "
+          ><i class="fab fa-google "></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "
+          ><i class="fab fa-instagram "></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "
+          ><i class="fab fa-linkedin-in "></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "
+          ><i class="fab fa-github "></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+      <section class=" ">
+        <form action=" ">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center ">
+            <!--Grid column-->
+            <div class="col-auto ">
+              <p class="pt-2 ">
+                <strong>Sign up for our newsletter</strong>
+              </p>
             </div>
-        </div>
-
-        <div class="container ">
-            <div class="row ">
-
-                <div class="col-lg-6 col-12 mb-4 pb-2 ">
-                    <h5 class="site-footer-title mb-3 ">Links</h5>
-
-                    <ul class="site-footer-links ">
-                        <li class="site-footer-link-item ">
-                            <a href="# " class="site-footer-link ">Home</a>
-                        </li>
-
-                        <li class="site-footer-link-item ">
-                            <a href="# " class="site-footer-link ">About</a>
-                        </li>
-
-                        <li class="site-footer-link-item ">
-                            <a href="# " class="site-footer-link ">Artists</a>
-                        </li>
-
-                        <li class="site-footer-link-item ">
-                            <a href="# " class="site-footer-link ">Schedule</a>
-                        </li>
-
-                        <li class="site-footer-link-item ">
-                            <a href="# " class="site-footer-link ">Pricing</a>
-                        </li>
-
-                        <li class="site-footer-link-item ">
-                            <a href="# " class="site-footer-link ">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 ">
-                    <h5 class="site-footer-title mb-3 ">Have a question?</h5>
-
-                    <p class="text-white d-flex mb-1 ">
-                        <a href="tel: 090-080-0760 " class="site-footer-link ">
-                            090-080-0760
-                        </a>
-                    </p>
-
-                    <p class="text-white d-flex ">
-                        <a href="mailto:hello@company.com " class="site-footer-link ">
-                            hello@company.com
-                        </a>
-                    </p>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0 ">
-                    <h5 class="site-footer-title mb-3 ">Location</h5>
-
-                    <p class="text-white d-flex mt-3 mb-2 ">
-                        mohali india</p>
-
-                    <a class="link-fx-1 color-contrast-higher mt-3 " href="# ">
-                        <span>Our Maps</span>
-                        <svg class="icon " viewBox="0 0 32 32 " aria-hidden="true ">
-                            <g fill="none " stroke="currentColor " stroke-linecap="round " stroke-linejoin="round ">
-                                <circle cx="16 " cy="16 " r="8.5 "></circle>
-                                <line x1="10 " y1="18 " x2="16 " y2="12 "></line>
-                                <line x1="16 " y1="12 " x2="22 " y2="18 "></line>
-                            </g>
-                        </svg>
-                    </a>
-                </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12 ">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4 ">
+                <input type="email " id="form5Example21 " class="form-control " />
+                <label class="form-label " for="form5Example21 ">Email address</label>
+              </div>
             </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto ">
+              <!-- Submit button -->
+              <button type="submit " class="btn btn-outline-light mb-4 ">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <section class="mb-4 ">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+          eum harum corrupti dicta, aliquam sequi voluptate quas.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class=" ">
+        <!--Grid row-->
+        <div class="row ">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+            <h5 class="text-uppercase ">Links</h5>
+  
+            <ul class="list-unstyled mb-0 ">
+              <li>
+                <a href="#! " class="text-white ">Link 1</a>
+              </li>
+              <li>
+                <a href="#! " class="text-white ">Link 2</a>
+              </li>
+              <li>
+                <a href="#! " class="text-white ">Link 3</a>
+              </li>
+              <li>
+                <a href="#! " class="text-white ">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+            <h5 class="text-uppercase ">Links</h5>
+  
+            <ul class="list-unstyled mb-0 ">
+              <li>
+                <a href="#! " class="text-white ">Link 1</a>
+              </li>
+              <li>
+                <a href="#! " class="text-white ">Link 2</a>
+              </li>
+              <li>
+                <a href="#! " class="text-white ">Link 3</a>
+              </li>
+              <li>
+                <a href="#! " class="text-white ">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+            <h5 class="text-uppercase ">Links</h5>
+  
+            <ul class="list-unstyled mb-0 ">
+              <li>
+                <a href="#! " class="text-white ">Link 1</a>
+              </li>
+              <li>
+                <a href="#! " class="text-white ">Link 2</a>
+              </li>
+              <li>
+                <a href="#! " class="text-white ">Link 3</a>
+              </li>
+              <li>
+                <a href="#! " class="text-white ">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+            <h5 class="text-uppercase ">Links</h5>
+  
+            <ul class="list-unstyled mb-0 ">
+              <li>
+                <a href="#! " class="text-white ">Link 1</a>
+              </li>
+              <li>
+                <a href="#! " class="text-white ">Link 2</a>
+              </li>
+              <li>
+                <a href="#! " class="text-white ">Link 3</a>
+              </li>
+              <li>
+                <a href="#! " class="text-white ">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
         </div>
-
-        </div>
-        </div>
-
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2); ">
+      HMmohali
+      <a class="text-white " href="https://mdbootstrap.com/ ">Learn</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js "></script>
         <script src="js/bootstrap.bundle.min.js "></script>
