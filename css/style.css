@@ -1,3 +1,186 @@
 #contact {
-    background-color: bl;
+  background-color: bl;
+}
+
+
+
+.sale_section .heading_container {
+  padding: 3%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.heading_container h2{
+  color: #3554d1;
+}
+
+.heading_container p {
+  color: blue;
+}
+
+.sale_section .sale_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.sale_section .sale_container .box {
+  -ms-flex-preferred-size: 32%;
+  flex-basis: 32%;
+  margin: .65%;
+}
+
+.sale_section .sale_container .box .img-box img {
+  width: 100%;
+}
+
+.sale_section .sale_container .box .detail-box {
+  margin-top: 10px;
+}
+
+.sale_section .sale_container .box .detail-box h6 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.sale_section .btn-box {
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.sale_section .btn-box a {
+  display: inline-block;
+  padding: 15px 55px;
+  background-color: transparent;
+  color: #3554d1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid #3554d1;
+  border-radius: 25px;
+  margin-top: 35px;
+}
+
+.sale_section .btn-box a:hover {
+  background-color: #3554d1;
+  border-color: transparent;
+  color: #ffffff;
+}
+
+/* Select a home start */
+
+.select-home{
+  text-align: center;
+}
+.select-home h2{
+  color: #3554d1;
+}
+
+.select-home p{
+  color: blue;
+}
+
+/* secect a home end */
+
+/* portfolio container */
+.container-fluid{
+  padding: 3%;
+}
+
+
+/* news and events  */
+
+
+/*--------------------------------------------------------------
+# Recent Blog Posts Section
+--------------------------------------------------------------*/
+.recent-posts .post-box {
+  transition: 0.3s;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-posts .post-box .post-img {
+  overflow: hidden;
+  position: relative;
+}
+
+.recent-posts .post-box .post-img img {
+  transition: 0.5s;
+}
+
+.recent-posts .post-box .meta {
+  margin-top: 15px;
+}
+
+.recent-posts .post-box .meta .post-date {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-primary);
+}
+
+.recent-posts .post-box .meta .post-author {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+.recent-posts .post-box .post-title {
+  font-size: 18px;
+  color: var(--color-secondary);
+  font-weight: 700;
+  margin: 15px 0 0 0;
+  position: relative;
+  transition: 0.3s;
+}
+
+.recent-posts .post-box p {
+  margin: 15px 0 0 0;
+  color: rgba(27, 47, 69, 0.7);
+}
+
+.recent-posts .post-box .readmore {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  line-height: 1;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+.recent-posts .post-box .readmore i {
+  line-height: 0;
+  margin-left: 4px;
+  font-size: 18px;
+}
+
+.recent-posts .post-box:hover .post-title {
+  color: var(--color-primary);
+}
+
+.recent-posts .post-box:hover .post-img img {
+  transform: scale(1.1);
+}
+
+.section-header{
+  padding: 3%;
+  text-align: center;
+}
+.section-header h2{
+  color: #3554d1;
 }
